@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Karantina:wght@300&display=swap");
+body {
+  background: #958f9b;
+  font-family: Karantina;
+  margin: 0;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+.element {
+  margin-bottom: 20px;
+}
+/*# sourceMappingURL=main.css.map */

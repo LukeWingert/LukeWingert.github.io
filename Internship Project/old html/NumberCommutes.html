@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+  
+    <div class="navbar" id='navbar'>
+        <div class="container">
+            
+            <h1>Commute Calculator</h1>
+            <a href="NumberCommutes.html"><h1>How many commutes can your gas tank make</h1></a>
+            <a href="index.html"><h1>How does your commute affect your salary?</h1></a>
+        </div>
+    </div>
+
+    <script src="scripts/CommuteTimes.js"></script>
+    <section class="hero">
+        <div class="container">
+            <div class="input">
+                <div class="rectangle">
+                    <div>
+                        <label for="distance">Please enter your distance</label>
+                        <input type="text" id="distance" name="distance">
+                    </div>
+
+                    <div>
+                        <label for="milesPerGallon">Please enter miles per gallon</label>
+                        <input type="text" id="milesPerGallon" name="milesPerGallon">
+                    </div>
+                    
+                    <div>
+                        <label for="tankSize">Please enter the gasoline tank size</label>
+                        <input type="text" id="tankSize" name="tankSize">
+                    </div>
+                    <div>
+                        <button id="calculate" onclick= "numCommutes()">Calculate Cost</button>
+                    </div>
+                </div>
+
+                <div class="rectangle">
+                    <div>
+                        <h3>Assumptions:</h3>
+                        <ul>
+                            <li>Monthly Salary is based on a 5 day work week</li>
+                            <li>There are 21 work days in a month</li>
+                            <li>The commute distance given is the one way distance</li>
+                            <li>Miles per gallon doesn't change with car speed</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+  
+        </div>
+        <div class="outputRect">
+                Total commutes per gas tank: <span id="totalCommutes"></span>
+        </div>
+    </section>    
+
+    
+
+
+</body>
+</html>
